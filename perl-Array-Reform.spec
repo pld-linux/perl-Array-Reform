@@ -7,12 +7,12 @@
 Summary:	Array::Reform - Convert an array into N-sized array of arrays
 Summary(pl):	Array::Reform - konwersja tablicy w N-d³ugo¶ci tablicê tablic
 Name:		perl-Array-Reform
-Version:	1.02
-Release:	3
+Version:	1.03
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	468f67899a739f4f8e2d874efcde21c7
+# Source0-md5:	aa7f8e776623a014db6c19a906cca409
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.005
 BuildArch:	noarch
