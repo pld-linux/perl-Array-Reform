@@ -1,11 +1,14 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Array
-%define	pnam	Reform
-Summary:	Array::Reform -- Convert an array into N-sized array of arrays.
-Summary(pl):	Array::Reform -- Przekonwertuj tablicê w N-d³ugo¶ci tablicê tablic.
+%define		pdir	Array
+%define		pnam	Reform
+Summary:	Array::Reform - Convert an array into N-sized array of arrays
+Summary(pl):	Array::Reform - konwersja tablicy w N-d³ugo¶ci tablicê tablic
 Name:		perl-Array-Reform
 Version:	1.02
-Release:	1
+Release:	2
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -30,13 +33,13 @@ Przydatny m.in. przy umieszczaniu danych w tabeli HTML.
 %build
 perl Makefile.PL
 %{__make}
-#%{__make} test
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,4 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_sitelib}/Array/Reform.pm
+%dir %{perl_sitelib}/auto/Array/Reform
+%{perl_sitelib}/auto/Array/Reform/autosplit.ix
 %{_mandir}/man3/*
