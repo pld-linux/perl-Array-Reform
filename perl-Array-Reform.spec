@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Array
-%define	pnam	Reform
+%define		pdir	Array
+%define		pnam	Reform
 Summary:	Array::Reform - convert an array into N-sized array of arrays
 Summary(pl):	Array::Reform - konwersja tablicy do tablicy tablic o rozmiarze N
 Name:		perl-Array-Reform
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Ever had a list of things you needed to neetly format into a set of
-HTML table rows?  Well, look no further my friend.  For the low, low
+HTML table rows? Well, look no further my friend. For the low, low
 price of 0.00 you too can reform you data into a neet set of lists and
 produce tables from it.
 
