@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Array
 %define		pnam	Reform
-Summary:	Array::Reform - Convert an array into N-sized array of arrays
+Summary:	Array::Reform - convert an array into N-sized array of arrays
 Summary(pl):	Array::Reform - konwersja tablicy w N-d³ugo¶ci tablicê tablic
 Name:		perl-Array-Reform
 Version:	1.03
