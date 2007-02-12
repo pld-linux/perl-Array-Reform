@@ -6,7 +6,7 @@
 %define		pdir	Array
 %define		pnam	Reform
 Summary:	Array::Reform - convert an array into N-sized array of arrays
-Summary(pl):	Array::Reform - konwersja tablicy do tablicy tablic o rozmiarze N
+Summary(pl.UTF-8):   Array::Reform - konwersja tablicy do tablicy tablic o rozmiarze N
 Name:		perl-Array-Reform
 Version:	1.03
 Release:	1
@@ -25,8 +25,8 @@ HTML table rows? Well, look no further my friend. For the low, low
 price of 0.00 you too can reform you data into a neet set of lists and
 produce tables from it.
 
-%description -l pl
-Ten modu³ pomaga przekszta³ciæ tablicê w tablicê tablic o rozmiarze N.
+%description -l pl.UTF-8
+Ten moduÅ‚ pomaga przeksztaÅ‚ciÄ‡ tablicÄ™ w tablicÄ™ tablic o rozmiarze N.
 Jest przydatny m.in. przy umieszczaniu danych w tabeli HTML.
 
 %prep
