@@ -6,7 +6,7 @@
 %define		pdir	Array
 %define		pnam	Reform
 Summary:	Array::Reform - convert an array into N-sized array of arrays
-Summary(pl.UTF-8):   Array::Reform - konwersja tablicy do tablicy tablic o rozmiarze N
+Summary(pl.UTF-8):	Array::Reform - konwersja tablicy do tablicy tablic o rozmiarze N
 Name:		perl-Array-Reform
 Version:	1.03
 Release:	1
