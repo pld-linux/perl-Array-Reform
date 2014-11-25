@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Array
 %define		pnam	Reform
+%include	/usr/lib/rpm/macros.perl
 Summary:	Array::Reform - convert an array into N-sized array of arrays
 Summary(pl.UTF-8):	Array::Reform - konwersja tablicy do tablicy tablic o rozmiarze N
 Name:		perl-Array-Reform
@@ -14,8 +14,9 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aa7f8e776623a014db6c19a906cca409
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Array-Reform/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
